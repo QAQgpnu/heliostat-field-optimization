@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "heliostat-field-optimization"
+version = "1.0.0"
+description = "Evidence-bounded reconstruction of a heliostat-field optical model"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "QAQgpnu" }]
+dependencies = [
+  "matplotlib>=3.7,<4",
+  "numpy>=1.24,<3",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7,<9", "ruff>=0.5,<1"]
+excel = ["openpyxl>=3.1,<4"]
+
+[project.scripts]
+heliostat-demo = "heliostat_field.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

@@ -1,0 +1,49 @@
+{
+  "status": "derived from retained team-result workbooks",
+  "sampling": "96 evenly spaced row indices including first and last; no random selection",
+  "full_workbooks_published": false,
+  "summaries": [
+    {
+      "layout": "result2",
+      "retained_rows": 1752,
+      "tower_x_m": 17.3,
+      "tower_y_m": 12.7,
+      "width_min_m": 3.7,
+      "width_mean_m": 3.7000000000000006,
+      "width_max_m": 3.7,
+      "height_min_m": 5.27,
+      "height_mean_m": 5.269999999999999,
+      "height_max_m": 5.27,
+      "mirror_area_total_m2": 34162.24799999999,
+      "radius_min_m": 21.485478654198047,
+      "radius_mean_m": 236.35718728657667,
+      "radius_max_m": 362.9623086559618,
+      "field_center_radius_min_m": 0.02816025568065745,
+      "field_center_radius_max_m": 343.484453031277,
+      "mirrors_within_100m_of_tower": 30,
+      "nearest_spacing_min_m": 0.0,
+      "spacing_violations_vs_width_plus_5m": 216
+    },
+    {
+      "layout": "result3",
+      "retained_rows": 1752,
+      "tower_x_m": 13.3,
+      "tower_y_m": 17.9,
+      "width_min_m": 3.22018814381651,
+      "width_mean_m": 3.697387956810917,
+      "width_max_m": 4.18083832989765,
+      "height_min_m": 4.58495319542658,
+      "height_mean_m": 5.2604229283396045,
+      "height_max_m": 5.95509937012843,
+      "mirror_area_total_m2": 34076.0023122366,
+      "radius_min_m": 22.340436208812037,
+      "radius_mean_m": 236.4035645054097,
+      "radius_max_m": 363.34772764509347,
+      "field_center_radius_min_m": 0.0793095202355934,
+      "field_center_radius_max_m": 343.4692424607485,
+      "mirrors_within_100m_of_tower": 34,
+      "nearest_spacing_min_m": 0.0,
+      "spacing_violations_vs_width_plus_5m": 208
+    }
+  ]
+}
