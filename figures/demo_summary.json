@@ -1,0 +1,23 @@
+{
+  "model_status": "reconstruction with documented approximations",
+  "random_seed": 20230910,
+  "synthetic_demo_mirror_count": 220,
+  "annual_sample_count": 60,
+  "summary": {
+    "mean_cosine_efficiency": 0.7873177018340478,
+    "mean_shadow_blocking_efficiency": 0.9994407273384522,
+    "mean_atmospheric_efficiency": 0.9729508636162343,
+    "mean_truncation_efficiency": 0.9993965607261,
+    "mean_optical_efficiency": 0.704006632481165,
+    "field_power_mw": 3.0107207507836717,
+    "specific_power_kw_m2": 0.6842547160871981
+  },
+  "best_grid_candidate": {
+    "tower_x_m": 0.0,
+    "tower_y_m": -20.0,
+    "width_scale": 0.9,
+    "score_kw_m2": 0.6951517534138009,
+    "mean_power_mw": 2.477520849166786
+  },
+  "paper_values_are_not_validation_targets": true
+}

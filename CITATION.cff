@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: Heliostat Field Optical Model Reconstruction
+message: Please cite the software repository and clearly label reconstructed results.
+type: software
+authors:
+  - name: QAQgpnu
+version: 1.0.0
+date-released: 2026-09-01
+license: MIT
+repository-code: https://github.com/QAQgpnu/heliostat-field-optimization

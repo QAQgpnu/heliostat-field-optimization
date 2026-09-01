@@ -1,0 +1,36 @@
+name: quality
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install
+        run: python -m pip install -e ".[dev]"
+      - name: Test
+        run: python -m pytest
+      - name: Lint
+        run: ruff check .
+      - name: Public safety scan
+        run: python scripts/public_safety_scan.py
+      - name: Generate demo
+        run: python -m heliostat_field --output-dir artifacts/demo
+      - name: Verify demo outputs
+        run: >-
+          test -s artifacts/demo/demo_summary.json &&
+          test -s artifacts/demo/monthly_summary.csv &&
+          test -s artifacts/demo/monthly_efficiency.png &&
+          test -s artifacts/demo/layout_comparison.png &&
+          test -s artifacts/demo/optimization_candidates.png
