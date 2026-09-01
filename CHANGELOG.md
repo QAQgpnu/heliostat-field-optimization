@@ -9,3 +9,4 @@
 - Added small public derivatives and aggregate audits of retained result workbooks.
 - Added Chinese and English READMEs, model/data/validation documentation, and generated figures.
 - Explicitly documented differences from the paper and excluded private source artifacts.
+- Used Node.js 24-based official GitHub Actions releases for the CI runtime.
